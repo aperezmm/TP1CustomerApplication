@@ -184,7 +184,7 @@ public class Customer implements Serializable {
     public void setZip(MicroMarket zip) {
         this.zip = zip;
     }
-
+    
     @Override
     public int hashCode() {
         int hash = 0;

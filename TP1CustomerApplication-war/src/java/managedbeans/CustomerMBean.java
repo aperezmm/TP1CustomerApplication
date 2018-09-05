@@ -49,13 +49,19 @@ public class CustomerMBean implements Serializable {
     }
     
     public String update(){
-        System.out.println("managedbeans.CustomerMBean.update() " + "###UPDATE###");
+        System.out.println("###UPDATE###");
         customer = customerManager.update(customer);
-        return "Customer Update";
+        return "Customer List";
     }
     
+    public String list(){
+        System.out.println("managedbeans.CustomermBean.list()" + "###LIST###");
+        return "CustomerList";
+    }
     
-    
-    
-    
+    public String showDetails(Customer customer){
+        this.customer = customer;
+        return "CustomerDetails";
+    }
 }
+
